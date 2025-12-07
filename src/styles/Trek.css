@@ -1,0 +1,150 @@
+/* trek Component */
+.card-container {
+  margin: 20px;
+  background-color: rgb(228, 218, 218);
+  min-height: 70vh;              /* use min-height instead of fixed height */
+  box-shadow: 0 0 20px rgb(99, 98, 98);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* wrapper for all cards */
+.card {
+  width: 90%;
+  display: flex;
+  padding: 40px 30px;       
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/* single card */
+.card .card-content {
+  height: 450px;
+  width: 350px;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 30px;
+  box-shadow: 0 0 20px rgb(87, 86, 86);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #eee9e9;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+  letter-spacing: 1.4px;
+}
+
+.card .card-content:hover{
+  transform: translateY(-10px);
+}
+
+/* image at top */
+.card-content-image {
+  min-height: 20vmin;
+  width: 100%;
+  object-fit: cover;
+  display: block;              /* keeps image nicely cropped */
+}
+
+/* text */
+.card-content-heading {
+  margin: 6px 8px 0;
+}
+
+.card-content-para {
+  margin: 6px 10px 10px;
+  font-size: 16px;
+  flex: 1;                         /* pushes buttons area to the bottom */
+}
+
+/* buttons container at bottom */
+.trek-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 4rem;                /* smaller, more flexible height */
+  padding: 6px;
+  height: 20vmin;
+  box-shadow: 0 0 20px rgb(68, 67, 67);
+  margin: 20px;
+  border-radius: 10px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238, 231, 231);
+}
+
+.trek-buttons:hover {
+  background-color: rgb(17, 111, 165);
+}
+
+/* base button style */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out, transform 0.1s;
+  font-size: 16px;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* variations */
+.btn-call {
+  background-color: #28a745; /* green */
+}
+
+.btn-call:hover {
+  background-color: #1e7e34;
+}
+
+.btn-whatsapp {
+  background-color: #25d366; /* whatsapp green */
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe57;
+}
+
+.btn-details {
+  background-color: #007bff; /* blue */
+}
+
+.btn-details:hover {
+  background-color: #0056b3;
+}
+
+/* small-screen tweaks */
+@media (max-width: 600px) {
+  .card-container {
+    margin: 10px;
+  }
+
+  .card {
+    padding: 20px 10px;
+  }
+
+  .card .card-content {
+    width: 90%;
+    height: auto;                 /* let height grow with content */
+  }
+
+  .card-content-image {
+    height: 40vmin;
+  }
+}

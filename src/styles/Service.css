@@ -1,0 +1,103 @@
+.Service-container{
+    width: 100%;
+    overflow: hidden;
+    
+    background: rgb(224, 219, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.service-content{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url('../assets/img3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 90vh; */
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(205, 205, 214);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.service-head{
+    padding: 4rem 0rem;
+}
+.service-content h1{
+    color: rgb(255, 103, 2);
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    margin: 10px;
+    
+
+}
+.service-content p {
+    color: rgb(238, 233, 233);
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 10px 20px;
+    line-height: 30px;
+}
+.serive-provide{
+    border: 3px solid white;
+    width: 100%;
+    /* margin: auto; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.serive-provide .boxes{
+    min-height: 40vmin;
+    border: 3px solid white;
+    width: 30%;
+    margin: 30px 20px;
+    display: flex;
+    text-align: center;
+    font-family: sans-serif;
+    flex-direction: column;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.serive-provide .boxes:hover{
+    transition: 0.4s;
+    transform: translateY(-10px);
+
+}
+
+.boxes h3{
+    font-size: 1.6em;
+    color: white;
+    margin: 20px;
+    font-weight: 600;
+}
+.boxes p{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin: 0 20px ;
+    font-weight: 600;
+}
+
+@media (max-width:1069px) {
+    .boxes h3{
+        font-size: 1.2rem;
+    }
+    .boxes p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:830px) {
+    .serive-provide{
+        flex-direction: column;
+    }
+    .serive-provide .boxes{
+        width: 60%;
+    }
+}

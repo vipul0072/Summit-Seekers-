@@ -1,0 +1,229 @@
+.header-container{
+  width: 100%;
+  background: rgb(3, 3, 32);
+  box-shadow: 0px 2px 15px rgb(119, 117, 117);
+  padding-top: 0px;
+}
+
+.contact-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  width: 82%;
+  margin: auto;
+  background: #FF6600;
+  border-radius: 0 0 10px 10px;
+}
+.contact-container a{
+  text-decoration: none;
+  color: rgb(231, 226, 226);
+  padding: 6px;
+  font-size: 16px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.contact-container span{
+  color: rgb(245, 236, 236);
+  margin: 0 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.contact-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-details .icon{
+  color: white;
+  font-size: 19px;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 96%;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.search-h2{
+  font-family: sans-serif;
+  color: hsl(0, 15%, 94%);
+  font-size: 32px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 25%;
+}
+
+.search-input{
+  /* margin: auto; */
+  width: 80vmin;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  color: rgb(3, 3, 32);
+  /* font-weight: 600; */
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.nav .nav-links{
+  list-style-type: none;
+}
+
+.nav-links a {
+  position: relative;
+  color: hsl(0, 19%, 93%);
+  text-decoration: none;
+  padding: 3px 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 10px 20px rgb(6, 6, 82);
+}
+
+.nav-link.active{
+  color: #ff5300;
+}
+
+.menu-icon{
+  display: none;
+}
+
+.cross-icon{
+  display: none;
+}
+
+.bottom{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: rgb(248, 122, 19);
+}
+
+.bottom .links{
+  display: flex;
+  justify-content: right;
+}
+
+.bottom-links{
+  padding: 4px 10px;
+  list-style-type: none;
+}
+.bottom-links a{
+  text-decoration: none;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(223, 217, 217);
+  font-weight: 600;
+  padding: 4px 10px;
+
+}
+
+
+@keyframes slideIn {
+  from {
+    width: 0;
+    left: 0;
+  }
+  to {
+    width: 100%;
+    left: 0;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .search-input{
+    display: none;
+  }
+}
+
+@media (max-width: 861px) {
+  .menu-icon{
+  display: block;
+  text-align: center;
+  padding: 0px 8px;
+  max-height: 56px;
+  border-radius: 10px;
+  font-size: 40px;
+  color: rgb(236, 234, 234);
+  background: #FF6600;;
+
+}
+
+/* Side nav */
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 220px;
+    background-color: rgb(3, 3, 32);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px 16px;
+    border-radius: 8px 0 0 8px;
+    overflow-y: auto;
+    gap: 0;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+.nav.open {
+  transform: translateX(0);
+}
+
+.nav li {
+  margin: 15px 0;
+}
+
+/* cross / close icon inside nav */
+.cross-icon {
+  display: block;
+  color: white;
+  list-style: none;
+  font-size: 34px;
+  font-weight: 900;
+  padding: 2px;
+  cursor: pointer;      /* makes it clear it's clickable */
+}
+
+/* hide contact container by default */
+.contact-container {
+  display: none;
+}
+
+/* card content: let inner items wrap nicely */
+.card .card-content {
+  display: flex;
+  flex-direction: column;  /* stack content vertically */
+  flex-wrap: nowrap;       /* usually not needed to wrap here */
+}
+
+
+}

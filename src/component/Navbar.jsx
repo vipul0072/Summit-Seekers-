@@ -31,19 +31,19 @@ function Navbar() {
                     <ul className={`nav ${isOpen ? 'open' : ''}`}>
                         <li className="cross-icon" onClick={change}>&times;</li>
 
-                        <li className="active nav-links"><NavLink className={({ isActive }) =>
+                        <li className="active nav-links"><NavLink onClick={change} className={({ isActive }) =>
                             `nav-link ${isActive ? 'active' : ''}`
                         } to="/">HOME</NavLink></li>
-                        <li className="active nav-links"><NavLink className={({ isActive }) =>
+                        <li className="active nav-links"><NavLink onClick={change} className={({ isActive }) =>
                             `nav-link ${isActive ? 'active' : ''}`
                         } to="/about">ABOUT</NavLink></li>
                         {/* <li className="active nav-links"><NavLink className={({ isActive }) =>
                             `nav-link ${isActive ? 'active' : ''}`
                         } to="/trek">TREKS</NavLink></li> */}
-                        <li className="active nav-links"><NavLink className={({ isActive }) =>
+                        <li className="active nav-links"><NavLink onClick={change} className={({ isActive }) =>
                             `nav-link ${isActive ? 'active' : ''}`
                         } to="/services">SERVICES</NavLink></li>
-                        <li className="active nav-links"><NavLink className={({ isActive }) =>
+                        <li className="active nav-links"><NavLink onClick={change} className={({ isActive }) =>
                             `nav-link ${isActive ? 'active' : ''}`
                         } to="/contact">CONTACT</NavLink></li>
                     </ul>

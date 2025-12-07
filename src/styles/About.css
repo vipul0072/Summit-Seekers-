@@ -22,9 +22,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 800px;
+    max-width: 90%;
+    /* min-height: 50vh; */
     background: rgba(255, 255, 255, 0.9);
-    padding: 40px 30px;
+    padding: 60px 30px;
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
@@ -38,6 +39,9 @@
 
 .image {
     margin-bottom: 30px;
+    padding: 30px;
+    text-align: center;
+    font-family: sans-serif;
 }
 
 .image img {
@@ -54,10 +58,12 @@
 }
 
 .image h3 {
-    margin-top: 20px auto;
-    color: rgba(255, 133, 18, 0.95);
+    margin: 10px auto;
+    color: rgb(255, 84, 5);
     font-size: 1.4rem;
     font-weight: 600;
+    text-align: center;
+
 }
 
 .message h2 {
@@ -70,6 +76,22 @@
     color: #666;
     line-height: 1.8;
     font-size: 1.1rem;
+}
+
+.story{
+    border: none;
+    margin: 5px 0;
+    color: white;
+    background-color: rgb(17, 165, 17);
+    padding: 4px 30px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.4s ease-in-out;
+}
+.story:hover{
+    transform: translateY(-5px);
+    background-color: rgb(18, 199, 18);
 }
 
 @media (min-width: 768px) {

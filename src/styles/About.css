@@ -88,6 +88,8 @@
     border-radius: 10px;
     font-size: 18px;
     transition: 0.4s ease-in-out;
+    text-decoration: none;
+
 }
 .story:hover{
     transform: translateY(-5px);

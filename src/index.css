@@ -58,3 +58,8 @@
 button, input {
   cursor: pointer;
 }
+
+.PageNotFound{
+  text-align: center;
+  width: 100%;
+}

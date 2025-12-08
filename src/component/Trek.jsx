@@ -4,7 +4,7 @@ import second from '../assets/img2.jpg';
 import third from '../assets/img3.webp';
 import '../styles/Trek.css';
 import {  NavLink } from 'react-router-dom';
-
+ 
 
 function Trek() {
 

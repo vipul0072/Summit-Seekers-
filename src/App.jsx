@@ -58,10 +58,10 @@ function App() {
             <Route path='/marketinghead' element= {<MarketingHead />}></Route>
             <Route path='*' element={<PageNotFound />}></Route>
           </Routes>
-          <Trek />
-      <Footer />
+          
       </Router>
-      
+      <Trek />
+      <Footer />
 
       {/* sticky whatsapp icon -left bottom */}
 

@@ -2,7 +2,6 @@ import { FaHome, FaWhatsapp } from 'react-icons/fa'
 import './App.css'
 import Footer from './component/Footer'
 import Navbar from './component/Navbar'
-import Trek from './component/Trek'
 import { useEffect, useState } from 'react'
 import { HashRouter as Router, Route, Routes } from 'react-router-dom'  // ✅ HashRouter!
 import Home from './pages/Home'
@@ -58,7 +57,7 @@ function App() {
             <Route path='/marketinghead' element= {<MarketingHead />}></Route>
             <Route path='*' element={<PageNotFound />}></Route>
           </Routes>
-        <Trek />
+        
       <Footer />    
       </Router>
       

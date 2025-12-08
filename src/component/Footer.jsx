@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import '../styles/Footer.css'
 
 function Footer() {
@@ -8,15 +9,10 @@ function Footer() {
 
                     <h2 >Quick Links</h2>
                     <ul>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">TREKS</a></li>
-                        <li><a href="">SERVICES</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">TREKS</a></li>
-                        <li><a href="">SERVICES</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">TREKS</a></li>
-                        <li><a href="">SERVICES</a></li>
+                        <li><NavLink className='quick-a' to='/'>Home</NavLink></li>
+                        <li><NavLink className='quick-a' to="/about">About</NavLink></li>
+                        <li><NavLink className='quick-a' href="/contact">Contact</NavLink></li>
+                        <li><NavLink className='quick-a' href="/service">SERVICES</NavLink>Services</li>
                     </ul>
                     <p>Copyright © 2024 | Summit Seekers | All rights reserved.</p>
                     
@@ -24,18 +20,18 @@ function Footer() {
                 <div className="quick">
                     <h2>Policies</h2>
                     <ul>
-                        <li><a href="">Privacy policy</a></li>
-                        <li><a href="">Terms & condition</a></li>
-                        <li><a href="">Disclaimer</a></li>
-                        <li><a href="">Cancellation policy</a></li>
+                        <li><NavLink className='quick-a' href="">Privacy policy</NavLink></li>
+                        <li><NavLink className='quick-a' href="">Terms & condition</NavLink></li>
+                        <li><NavLink className='quick-a' href="">Disclaimer</NavLink></li>
+                        <li><NavLink className='quick-a' href="">Cancellation policy</NavLink></li>
                     </ul>
                 </div>
                 <div className="quick">
                     <h2>Contact Info</h2>
                     <ul>
-                        <li><a href="tel:+91-6396702962">6396702062</a></li>
-                        <li><a href="">info.summitseekers@gmail.com</a></li>
-                        <li><a href="">shanti vihar chowk, Dehradun, India, 248001</a></li>
+                        <li><NavLink className='quick-a' href="tel:+91-6396702962">6396702062</NavLink></li>
+                        <li><NavLink className='quick-a' href="mailto: rawatvipul54@gmail.com">info.summitseekers@gmail.com</NavLink></li>
+                        <li><NavLink className='quick-a' href="">shanti vihar chowk, Dehradun, India, 248001</NavLink></li>
                     </ul>
                     <p>Designed & Developed by  <a href="https://d2p5pjhkisvyt3.cloudfront.net/" target='_blank'>Vipul Rawat</a>.</p>
                 </div>

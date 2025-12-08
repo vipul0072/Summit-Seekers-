@@ -1,7 +1,9 @@
+import Trek from '../component/Trek';
 import '../styles/Service.css';
 
 function Services() {
     return(
+        <>
         <div className="Service-container">
             <div className="service-content">
                 <div className='service-head'>
@@ -35,7 +37,10 @@ function Services() {
                     </div>
                 </div>
             </div>
+            
         </div>
+        <Trek />
+        </>
     )
 }
 

@@ -1,8 +1,10 @@
+import Trek from '../component/Trek';
 import '../styles/Home.css';
 
 
 function Home() {
     return(
+        <>
         <div className="home-container">
             <div className="home-background">
                     <div className="home-content">
@@ -11,7 +13,10 @@ function Home() {
                         <button className='home-content-button'>Book Your Next Trek</button>
                     </div>
             </div>
+
         </div>
+        <Trek />
+        </>
     )
 }
 

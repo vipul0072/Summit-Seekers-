@@ -101,6 +101,10 @@
   align-items: center;
   justify-content: center;
   text-shadow: 0 10px 20px rgb(6, 6, 82);
+  transition: 0.2s ease-in-out;
+}
+.nav-links a:hover{
+  color: #ff5300;
 }
 
 .nav-link.active{

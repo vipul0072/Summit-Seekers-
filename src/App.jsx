@@ -50,9 +50,9 @@ function App() {
             <Route path='/about' element={<About />}></Route>
             <Route path='/contact' element={<Contact />}></Route>
             <Route path='/services' element={<Services />}></Route>
-            <Route path='/first' element={<First />}></Route>
-            <Route path='/second' element={<Second />}></Route>
-            <Route path='/third' element={<Third />}></Route>
+            <Route path='/first' onClick={scrollTop} element={<First />}></Route>
+            <Route path='/second' onClick={scrollTop} element={<Second />}></Route>
+            <Route path='/third' onClick={scrollTop} element={<Third />}></Route>
             <Route path='/founder' element= {<Founder />}></Route>
             <Route path='/co-founder' element= {<CoFounder />}></Route>
             <Route path='/marketinghead' element= {<MarketingHead />}></Route>

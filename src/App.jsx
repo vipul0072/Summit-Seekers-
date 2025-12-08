@@ -4,7 +4,7 @@ import Footer from './component/Footer'
 import Navbar from './component/Navbar'
 import Trek from './component/Trek'
 import { useEffect, useState } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'  // ✅ HashRouter!
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
@@ -43,7 +43,7 @@ function App() {
 
 
       
-      <BrowserRouter>
+      <Router>
       <Navbar />
           <Routes>
             <Route path='/' element={<Home />}> </Route>
@@ -57,11 +57,11 @@ function App() {
             <Route path='/founder' element= {<Founder />}></Route>
             <Route path='/co-founder' element= {<CoFounder />}></Route>
             <Route path='/marketinghead' element= {<MarketingHead />}></Route>
-            {/* <Route path='/*' element={<PageNotFound />}></Route> */}
+            <Route path='*' element={<PageNotFound />}></Route>
           </Routes>
           <Trek />
       <Footer />
-      </BrowserRouter>
+      </Router>
       
 
       {/* sticky whatsapp icon -left bottom */}

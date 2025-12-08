@@ -23,7 +23,7 @@ function About() {
                     <div className="image">
                         <img src={img2} alt="Mr. Vipul Rawat" />
                         <h3>Co-Founder</h3>
-                        <a className='story' href='/Co-founder'>Read full story</a>
+                        <a className='story' href='/co-founder'>Read full story</a>
                     </div>
                     <div className="message">
                         <h2>Co-Founder & Partners</h2>
@@ -34,7 +34,7 @@ function About() {
                     <div className="image">
                         <img src={img3} alt="Mr. Vipul Rawat" />
                         <h3>Marketing Head</h3>
-                        <a className='story' href='/marketinghead' >Read full story</a>
+                        <a className='story' href='/marketinghead'>Read full story</a>
                     </div>
                     <div className="message">
                         <h2>Co-Founder & Marketing Head</h2>

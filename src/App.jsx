@@ -57,7 +57,7 @@ function App() {
             <Route path='/founder' element= {<Founder />}></Route>
             <Route path='/co-founder' element= {<CoFounder />}></Route>
             <Route path='/marketinghead' element= {<MarketingHead />}></Route>
-            <Route path='/*' element={<PageNotFound />}></Route>
+            {/* <Route path='/*' element={<PageNotFound />}></Route> */}
           </Routes>
           <Trek />
       <Footer />

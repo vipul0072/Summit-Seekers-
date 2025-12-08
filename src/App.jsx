@@ -83,3 +83,8 @@ function App() {
 }
 
 export default App;
+
+
+// git add .
+// git commit -m "Fix: Vite build config for Vercel"
+// git push --force origin main

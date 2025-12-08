@@ -3,6 +3,7 @@ import first from '../assets/img1.jpg';
 import second from '../assets/img2.jpg';
 import third from '../assets/img3.webp';
 import '../styles/Trek.css';
+import { Link } from 'react-router-dom';
 // import { NavLink } from 'react-router-dom';
 
 
@@ -39,10 +40,10 @@ function Trek() {
                             </a>
 
                             <br></br>
-                            <a href={trek.link} className="btn btn-details" >
+                            <Link href={trek.link} className="btn btn-details" >
                                 <FaInfoCircle style={{ marginRight: 6 }} />
                                 View Details
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 ))}

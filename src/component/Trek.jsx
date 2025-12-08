@@ -40,7 +40,7 @@ function Trek() {
                             </a>
 
                             <br></br>
-                            <Link href={trek.link} className="btn btn-details" >
+                            <Link to={trek.link} className="btn btn-details" >
                                 <FaInfoCircle style={{ marginRight: 6 }} />
                                 View Details
                             </Link>

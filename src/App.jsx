@@ -13,9 +13,9 @@ import First from './pages/first'
 import Second from './pages/second'
 import Third from './pages/third'
 import PageNotFound from './pages/PageNotFound'
-import Founder from './founder/Founder'
-import CoFounder from './founder/Co-founder'
-import MarketingHead from './founder/Marketing-head'
+import Founder from './pages/Founder'
+import CoFounder from './pages/Co-founder'
+import MarketingHead from './pages/Marketing-head'
 // import { useState } from 'react'
 
 function App() {
@@ -56,7 +56,7 @@ function App() {
             <Route path='/founder' element= {<Founder />}></Route>
             <Route path='/co-founder' element= {<CoFounder />}></Route>
             <Route path='/marketinghead' element= {<MarketingHead />}></Route>
-            {/* <Route path='*' element={<PageNotFound />}></Route> */}
+            <Route path='*' element={<PageNotFound />}></Route>
           </Routes>
           <Trek />
       <Footer />

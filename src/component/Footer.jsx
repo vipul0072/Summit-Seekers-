@@ -33,7 +33,7 @@ function Footer() {
                         <li><NavLink className='quick-a' href="mailto: rawatvipul54@gmail.com">info.summitseekers@gmail.com</NavLink></li>
                         <li><NavLink className='quick-a' href="">shanti vihar chowk, Dehradun, India, 248001</NavLink></li>
                     </ul>
-                    <p>Designed & Developed by  <a href="https://my-personal-portfolio-three-gamma.vercel.app/" download='Vipul-Rawat.pdf' target='_blank'>Vipul Rawat</a>.</p>
+                    <p>Designed & Developed by  <a href="https://my-personal-portfolio-three-gamma.vercel.app/" download="Vipul-Rawat.pdf">Vipul Rawat</a>.</p>
                 </div>
                 
             </div>

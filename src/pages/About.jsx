@@ -2,7 +2,7 @@ import '../styles/About.css';
 import img from '../assets/vipul.jpg';
 import img2 from '../assets/img1.jpg';
 import img3 from '../assets/img2.jpg';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 
 function About() {
     return (
@@ -12,7 +12,7 @@ function About() {
                     <div className="image">
                         <img src={img} alt="Mr. Vipul Rawat" />
                         <h3>Mr. Vipul Rawat</h3>
-                        <NavLink className='story' to='/founder' >Read full story</NavLink>
+                        {/* <NavLink className='story' to='/founder' >Read full story</NavLink> */}
                     </div>
                     <div className="message">
                         <h2>Founder & CEO</h2>
@@ -24,7 +24,7 @@ function About() {
                     <div className="image">
                         <img src={img2} alt="Mr. Vipul Rawat" />
                         <h3>Co-Founder</h3>
-                        <NavLink className='story' to='/co-founder'>Read full story</NavLink>
+                        {/* <NavLink className='story' to='/co-founder'>Read full story</NavLink> */}
                     </div>
                     <div className="message">
                         <h2>Co-Founder & Partners</h2>
@@ -35,7 +35,7 @@ function About() {
                     <div className="image">
                         <img src={img3} alt="Mr. Vipul Rawat" />
                         <h3>Marketing Head</h3>
-                        <NavLink className='story' to='/marketinghead'>Read full story</NavLink>
+                        {/* <NavLink className='story' to='/marketinghead'>Read full story</NavLink> */}
                     </div>
                     <div className="message">
                         <h2>Co-Founder & Marketing Head</h2>
